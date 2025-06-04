@@ -1,0 +1,141 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+a{
+  color:#fff;
+  text-decoration: none;
+}
+ul, li, ol{list-style: none;}
+header{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  z-index: 10000;
+}
+
+header nav{
+  width:800px;
+  margin: 20px auto;
+}
+header nav a{
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 10px;
+  transition: 0.1s;
+}
+header nav a:hover{
+  border-bottom: 2px solid #fff;
+  padding-bottom:3px ;
+}
+
+footer{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+footer address{
+  font-style: normal;
+}
+
+main{width: 100%; padding-top: 100px;}
+button{
+  color: #fff;
+  padding: 3px 15px;
+  background: #ff7b7b;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ff4c4c;
+  transition: 0.3s;
+}
+button:hover{background: #ff4c4c; border-bottom: 2px solid #ff0000;}
+
+/* 테이블 서식 */
+table{ 
+  margin: 0 auto; 
+  width: 1200px;
+}
+
+table thead tr th{background: #ccc; color: #333; padding: 10px 5px; border-bottom: 3px solid #a3a3a3;
+}
+
+table tbody td{
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.books{width: 1200px; margin: 50px auto; }
+
+/* 글 생성 */
+table{border-collapse: collapse;}
+.create{
+  width: 100%;
+}
+.create h3{text-align: center;margin-top: 50px;}
+.create form{width: 400px; margin: 50px auto;}
+.create form p:last-child {width:400px; text-align:right;}
+.create form p button{margin-top: 30px;
+}
+.create input{
+  width: 400px;
+  padding: 5px;
+}
+.create select{width: 414px; padding: 5px; }
+/* 상품등록 버튼 */
+.add{width: 1200px; text-align: right; margin: 50px auto;}
+
+
+/* Question 서식 */
+.question{
+  width: 100%;
+  position: relative;
+}
+
+.question section{width: 400px; margin: 30px 50%;  padding:0px 60px;}
+
+.question section h3{margin: 30px 0px; text-align: center;background: #ff7b7b; padding: 10px 0px; color: #fff;}
+
+.question section input[type='text'], .question section input[type='email'], .question section textarea
+{width: 400px; padding: 8px 0px;}
+
+.question section input[type='checkbox']{margin-right: 5px;}
+
+.question section input{margin: 20px 0px;}
+
+.send{width: 100%; background: #ff7b7b; border:none; border-bottom:2px solid #ff4c4c; padding: 10px 8px; border-radius: 5px; color: #fff; }
+
+.question_img{position: absolute; top:25%; left: 20%;}
+
+/* Login */
+.login{width: 100%; margin-top: 100px;}
+.login h2{text-align: center;}
+.login form{width: 320px;margin: 0 auto;}
+.login form label{display: none;}
+.login form input[type='text'],.login form input[type='password'], .login form input[type='email']{width:100%;padding: 5px 0px; margin: 20px 0px; border: none; border-bottom:1px solid #333}
+.login form input[type='submit']{
+  width:100%; background: #ff7b7b; color:#fff; border:none; border-bottom: 2px solid #ff4c4c; padding: 5px 0px; text-align: center; cursor: pointer;
+}
+.login .id_save{display: flex; gap: 5px; float: right; margin-bottom: 10px;}
+.login .id_save label{display: block; font-size:12px;}
+.btn-group{width: 320px; text-align: center; margin-top: 20px; font-size: 14px;}
+.btn-group a{width: 320px; font-size: 14px; color: #333;} 
+.btn-group a:nth-child(2){padding: 0px 10px;}
+.btn-group a:first-child{padding-right:10px;}
+.btn-group a:last-child{padding-left:10px;}
+
+/* 회원가입 페이지 */
+.join {width: 100%; height: 650px; margin-top: 100px;}
+.join h2{text-align: center;}
+.join form{width: 320px; margin: 0 auto;}
+.join form input[type='text'], .join form input[type='password'], .join form input[type='email']{width: 100%; border: none; border-bottom: 2px solid #333; padding: 5px 0px; margin-bottom: 20px;}
+.join form input[type='submit'],.join form input[type='reset']{
+  width:100%; background: #ff7b7b; color:#fff; border:none; border-bottom: 2px solid #ff4c4c; padding: 5px 0px; text-align: center; margin: 10px 0px; cursor: pointer;
+}
+
+/* 로그인2 페이지 */
