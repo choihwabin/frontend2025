@@ -65,7 +65,7 @@ const Question=()=> {
             <input type='checkbox' id='agree' required/>
             <label htmlFor='agree'>개인정보처리 방침에 동의합니다.</label>
           </p>    
-        <input type='submit' onClick={handleSubmit} className='send' value='전송하기'/>
+        <input type='submit' className='send' value='전송하기'/>
       </section>
 
       <div className='question_img'>
