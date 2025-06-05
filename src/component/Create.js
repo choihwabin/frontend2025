@@ -23,7 +23,7 @@ const Create=()=> {
   const handleSubmit=(e)=>{
     e.preventDefault(); //새로고침 방지
 
-    axios.post(`backend2025/goods`, form)
+    axios.post(`https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/goods`, form)
     .then(()=>{ //서버와 통신이 성공시
       alert('상품이 등록되었습니다.');
       navigate('/goods'); //상품목록 페이지로 이동
