@@ -28,7 +28,7 @@ function Book_create(props) {
   const handleSubmit=(e)=>{
     e.preventDefault();
 
-    axios.post(`https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/books`,form)
+    axios.post(`http://localhost:9070/books`,form)
     .then(()=>{
       alert('등록되었습니다.');
       navigate('/books');

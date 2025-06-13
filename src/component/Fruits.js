@@ -9,7 +9,7 @@ const Fruits=()=> {
 
   //2. 상품 리스트 조회 (출력)
   const loadData=()=>{
-    axios.get('https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/fruits')
+    axios.get('http://localhost:9070/fruits')
     .then(res=>setData(res.data))
     .catch(err=>console.log(err))
   }
@@ -23,14 +23,14 @@ const Fruits=()=> {
   //3. 상품 리스트 삭제(delete)
   const deleteData=(num)=>{
     if(window.confirm('정말 삭제하시겠습니까?')){
-      axios.delete(`https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/fruits/${num}`)
+      axios.delete(`http://localhost:9070/fruits/${num}`)
       .then(()=>{
         alert('삭제되었습니다.')
         loadData();
         
   //삭제 후 페이지 조정
   //마지막 페이지에 1개만 남아있고 삭제하면, currentPage가 totalPage보다 커질 수 있다.
-  //이럴때 , 삭제 후 아래와 같이 페이지를 조정하는 것이 UX에 좋다
+  //이럴때 , 삭제 후 아래오 ㅏ같이 페이지를 조정하는 것이 UX에 좋다
         if((currentPage - 1) * itemPerPage >= data.length -1 && currentPage > 1){
           setCurrentPage(currentPage - 1);;
         }

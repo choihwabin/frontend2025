@@ -25,7 +25,7 @@ const Question=()=> {
     e.preventDefault();
     // 데이터가 전송되면 성공, 실패(catch)
     try{ //전송 성공시 
-      await axios.post(`https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/question`, formData);
+      await axios.post(`http://localhost:9070/question`, formData);
       alert('전송이 완료되었습니다.');
       // 데이터 전송 후 변수값 초기화
       setFormData({name:'', tel:'', email:'', txtbox:''})
@@ -65,7 +65,7 @@ const Question=()=> {
             <input type='checkbox' id='agree' required/>
             <label htmlFor='agree'>개인정보처리 방침에 동의합니다.</label>
           </p>    
-        <input type='submit' className='send' value='전송하기'/>
+        <input type='submit' onClick={handleSubmit} className='send' value='전송하기'/>
       </section>
 
       <div className='question_img'>

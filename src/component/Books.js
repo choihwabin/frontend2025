@@ -36,7 +36,7 @@ const itemPerPage= 5;
 
 //1. books 리스트출력
 const loadData=()=>{
-axios.get('https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/book_store2')
+axios.get('http://localhost:9070/book_store2')
 .then(res=>setData(res.data))
 .catch(err=>console.log(err));
 }
@@ -47,7 +47,7 @@ useEffect(()=>{
 //2. 리스트 삭제
 const deleteData=(CODE)=>{
   if(window.confirm('정말 삭제하시겠습니까?')){
-    axios.delete(`https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/book_store2/${CODE}`)
+    axios.delete(`http://localhost:9070/book_store2/${CODE}`)
     .then(()=>{
       alert('삭제되었습니다.');
       loadData(); // 삭제후 목록 갱신

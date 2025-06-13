@@ -14,7 +14,7 @@ function Fruit_update(props) {
 
   // 서버측에서 넘길 데이터 통신 후 성공실패 여부 출력
   useEffect(()=>{
-    axios.get(`https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/fruits/${num}`)
+    axios.get(`http://localhost:9070/fruits/${num}`)
     .then(res=>{
       console.log('서버 응답값 : ', res.data)
       setForm(res.data);
@@ -33,7 +33,7 @@ function Fruit_update(props) {
   const handleSubmit=(e)=>{
     e.preventDefault();
 
-    axios.put(`https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/fruits/fruit_update/${num}`, {
+    axios.put(`http://localhost:9070/fruits/fruit_update/${num}`, {
       name:form.name,
       color:form.color,
       price:form.price,

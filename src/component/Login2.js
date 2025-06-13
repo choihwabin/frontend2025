@@ -26,7 +26,7 @@ function Login2(props) {
   const handleSubmit=async (e)=>{
     e.preventDefault();
     // console.log(form.username, form.email, form.password, form.tel)
-    try{const res = await axios.post('https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/login2', form);
+    try{const res = await axios.post('http://localhost:9070/login2', form);
 
       // 사용자 인증이 끝나면 토큰을 발급
       localStorage.setItem('token', res.data.token);
