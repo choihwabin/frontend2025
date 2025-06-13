@@ -9,7 +9,7 @@ const Fruits=()=> {
 
   //2. 상품 리스트 조회 (출력)
   const loadData=()=>{
-    axios.get('http://localhost:9070/fruits')
+    axios.get('https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/fruits')
     .then(res=>setData(res.data))
     .catch(err=>console.log(err))
   }
@@ -23,7 +23,7 @@ const Fruits=()=> {
   //3. 상품 리스트 삭제(delete)
   const deleteData=(num)=>{
     if(window.confirm('정말 삭제하시겠습니까?')){
-      axios.delete(`http://localhost:9070/fruits/${num}`)
+      axios.delete(`https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/fruits/${num}`)
       .then(()=>{
         alert('삭제되었습니다.')
         loadData();
