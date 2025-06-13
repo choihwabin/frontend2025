@@ -24,7 +24,7 @@ const Fruit_create=()=> {
   const handleSubmit=(e)=>{
     e.preventDefault();
 
-    axios.post(`http://localhost:9070/fruits`, form)
+    axios.post(`https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/fruits`, form)
     // 성공시
     .then(()=>{
       alert('상품이 등록되었습니다.')
