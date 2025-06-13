@@ -32,7 +32,7 @@ function Register2(props) {
       return;
     }
     try{
-      await axios.post('http://localhost:9070/register2',{
+      await axios.post('https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/register2',{
         username:form.username,
         password:form.password,
         tel:form.tel,
