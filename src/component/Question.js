@@ -25,7 +25,7 @@ const Question=()=> {
     e.preventDefault();
     // 데이터가 전송되면 성공, 실패(catch)
     try{ //전송 성공시 
-      await axios.post(`http://localhost:9070/question`, formData);
+      await axios.post(`https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/question`, formData);
       alert('전송이 완료되었습니다.');
       // 데이터 전송 후 변수값 초기화
       setFormData({name:'', tel:'', email:'', txtbox:''})
