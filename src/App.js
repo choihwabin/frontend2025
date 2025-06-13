@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     // 질문 개수 가져오기
-    fetch('http://localhost:9070/question/count')
+    fetch('https://port-0-backend2025-mbeeobco2e6ef2af.sel4.cloudtype.app/question/count')
       .then(res => res.json())
       .then(data => setQuestionCount(data.count))
       .catch(() => setQuestionCount(0));
